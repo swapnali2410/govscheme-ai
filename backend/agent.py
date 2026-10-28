@@ -16,12 +16,14 @@ from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeou
 from google.genai import types
 
 from agent_tools import AGENT_TOOLS
+from output_parser import ensure_missing_fields, parse_agent_reply
 from rag_service import (
     CHAT_MODEL,
     CHAT_TIMEOUT_SECONDS,
     FALLBACK_CHAT_MODEL,
     get_gemini_client,
 )
+from schemas import StructuredChatPayload
 
 logger = logging.getLogger(__name__)
 
@@ -154,6 +156,22 @@ def ask_agent(chat, question: str) -> tuple[str, object]:
 
     text = response.text or "I could not generate a response. Please try again."
     return text, fallback_chat
+
+
+def ask_agent_structured(
+    chat,
+    question: str,
+) -> tuple[str, StructuredChatPayload, object, str | None]:
+    """
+    Reuse the tool-using agent, then parse the reply into structured JSON.
+
+    Returns (reply_text, structured_payload, chat_to_keep, parse_error).
+    Existing plain-text ask_agent behavior is unchanged.
+    """
+    reply, chat_to_keep = ask_agent(chat, question)
+    structured, parse_error = parse_agent_reply(question, reply)
+    structured = ensure_missing_fields(structured)
+    return reply, structured, chat_to_keep, parse_error
 
 
 def run_cli():

@@ -29,6 +29,96 @@ class ChatResponse(BaseModel):
     reply: str
 
 
+class StructuredSchemeInfo(BaseModel):
+    """One scheme card extracted from the agent reply."""
+
+    name: Optional[str] = Field(
+        default=None,
+        description="Official scheme name if known",
+    )
+    category: Optional[str] = Field(
+        default=None,
+        description="Scheme category when known",
+    )
+    summary: Optional[str] = Field(
+        default=None,
+        description="Short description of the scheme",
+    )
+    benefits: list[str] = Field(
+        default_factory=list,
+        description="Benefit points from tool/knowledge-base data only",
+    )
+    eligibility: list[str] = Field(
+        default_factory=list,
+        description="Eligibility points from tool/knowledge-base data only",
+    )
+    documents: list[str] = Field(
+        default_factory=list,
+        description="Required documents when mentioned",
+    )
+    official_portal: Optional[str] = Field(
+        default=None,
+        description="Official portal URL when present",
+    )
+    application_url: Optional[str] = Field(
+        default=None,
+        description="Application URL when present",
+    )
+    how_to_apply: Optional[str] = Field(
+        default=None,
+        description="How to apply, only if stated in the source reply",
+    )
+    data_available: bool = Field(
+        default=True,
+        description="False when scheme details were unavailable",
+    )
+    missing_fields: list[str] = Field(
+        default_factory=list,
+        description="Field names that could not be filled from the reply",
+    )
+    notes: list[str] = Field(
+        default_factory=list,
+        description="Caveats or verification reminders",
+    )
+
+
+class StructuredChatPayload(BaseModel):
+    """Validated structured JSON produced by the output parser."""
+
+    answer_summary: str = Field(
+        ...,
+        description="Short plain-language summary of the assistant answer",
+    )
+    schemes: list[StructuredSchemeInfo] = Field(
+        default_factory=list,
+        description="Zero or more schemes mentioned in the answer",
+    )
+    follow_up_question: Optional[str] = Field(
+        default=None,
+        description="Optional clarifying question for the user",
+    )
+    disclaimer: str = Field(
+        default=(
+            "Verify scheme details on the official portal before applying. "
+            "Rules can change."
+        ),
+        description="Safety disclaimer for the user",
+    )
+    source_note: Optional[str] = Field(
+        default=None,
+        description="Note when answer came from an uploaded document",
+    )
+
+
+class StructuredChatResponse(BaseModel):
+    session_id: str
+    message: str
+    reply: str
+    structured: StructuredChatPayload
+    parse_success: bool = True
+    parse_error: Optional[str] = None
+
+
 class SessionCreateResponse(BaseModel):
     session_id: str
     message: str = "Chat session created."

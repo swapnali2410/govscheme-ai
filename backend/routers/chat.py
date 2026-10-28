@@ -2,12 +2,13 @@
 
 from fastapi import APIRouter, HTTPException
 
-from agent import ask_agent
+from agent import ask_agent, ask_agent_structured
 from conversation_store import conversation_store
 from schemas import (
     ChatRequest,
     ChatResponse,
     SessionCreateResponse,
+    StructuredChatResponse,
 )
 
 router = APIRouter(prefix="/api/chat", tags=["Chat"])
@@ -53,6 +54,49 @@ def chat(request: ChatRequest):
         session_id=session_id,
         message=message,
         reply=reply,
+    )
+
+
+@router.post(
+    "/structured",
+    response_model=StructuredChatResponse,
+    summary="Chat with structured JSON scheme output",
+)
+def chat_structured(request: ChatRequest):
+    """
+    Same agent + tools + session memory as /api/chat, then parse the
+    reply into validated structured JSON (benefits, eligibility, etc.).
+    """
+    message = request.message.strip()
+    if not message:
+        raise HTTPException(status_code=400, detail="Message cannot be empty.")
+
+    try:
+        session_id, chat_session = conversation_store.get_or_create(
+            request.session_id
+        )
+        reply, structured, chat_session, parse_error = ask_agent_structured(
+            chat_session,
+            message,
+        )
+        conversation_store.replace_chat(session_id, chat_session)
+    except ValueError as error:
+        raise HTTPException(status_code=500, detail=str(error)) from error
+    except TimeoutError as error:
+        raise HTTPException(status_code=504, detail=str(error)) from error
+    except Exception as error:
+        raise HTTPException(
+            status_code=502,
+            detail=f"Structured agent request failed: {error}",
+        ) from error
+
+    return StructuredChatResponse(
+        session_id=session_id,
+        message=message,
+        reply=reply,
+        structured=structured,
+        parse_success=parse_error is None,
+        parse_error=parse_error,
     )
 
 
