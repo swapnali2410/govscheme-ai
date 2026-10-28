@@ -1,0 +1,236 @@
+[
+  {
+    "id": "pm_kisan",
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "agriculture",
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "official_portal": "https://www.pmkisan.gov.in/",
+    "application_url": "https://www.pmkisan.gov.in/",
+    "source": "Official PM-KISAN portal (pmkisan.gov.in)",
+    "summary": "Central Sector scheme providing income support to eligible land-holding farmer families through Direct Benefit Transfer.",
+    "eligibility": [
+      "Land-holding farmer families identified by State Government / UT administration as per scheme guidelines.",
+      "Family means husband, wife and minor children.",
+      "Exclusion categories apply for higher economic status, including institutional land holders, serving/retired government officers (with stated exceptions), income-tax payers in the last assessment year, and certain professionals registered with professional bodies.",
+      "Former/present holders of constitutional posts and certain political office holders are excluded as per official guidelines."
+    ],
+    "benefits": [
+      "Income support of Rs. 6,000 per year to eligible farmer families.",
+      "Paid in three equal instalments of Rs. 2,000.",
+      "Funds are transferred directly to beneficiaries' bank accounts."
+    ],
+    "documents": [
+      "Aadhaar details as required by the portal / State process",
+      "Land ownership / farmer identification records as required by State or UT",
+      "Bank account details for Direct Benefit Transfer",
+      "Other documents specified on the official PM-KISAN portal during registration or correction"
+    ],
+    "how_to_apply": "Register or check status on the official PM-KISAN portal. States and UTs identify eligible farmer families. Use only the official website for beneficiary status and e-KYC related actions.",
+    "notes": [
+      "Scheme became operational from 1 December 2018.",
+      "Exact exclusion lists and process steps should be verified on pmkisan.gov.in before applying."
+    ]
+  },
+  {
+    "id": "pmjay",
+    "name": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB PM-JAY)",
+    "category": "health",
+    "ministry": "National Health Authority / Ministry of Health and Family Welfare",
+    "official_portal": "https://nha.gov.in/PM-JAY",
+    "application_url": "https://www.pmjay.gov.in/",
+    "source": "National Health Authority (nha.gov.in/PM-JAY)",
+    "summary": "Flagship health assurance scheme providing hospitalisation cover for secondary and tertiary care to eligible poor and vulnerable families.",
+    "eligibility": [
+      "Households included based on deprivation and occupational criteria of Socio-Economic Caste Census 2011 (SECC 2011) for rural and urban areas.",
+      "Families earlier covered under Rashtriya Swasthya Bima Yojana (RSBY) but not present in SECC 2011 are also included.",
+      "Beneficiary verification and eligibility checks should be done through official PM-JAY / NHA channels.",
+      "Coverage and beneficiary lists can vary by State implementation; verify on official portals."
+    ],
+    "benefits": [
+      "Health cover of Rs. 5 lakh per family per year for secondary and tertiary care hospitalisation.",
+      "Aimed at poor and vulnerable families forming the bottom 40% of the population as described by NHA.",
+      "Cashless treatment at empanelled hospitals as per scheme rules."
+    ],
+    "documents": [
+      "Aadhaar or other identity proof accepted by the beneficiary identification process",
+      "Ration card / family ID details where required by State process",
+      "Any e-card or family ID issued under PM-JAY, if already generated",
+      "Documents listed on the official beneficiary / eligibility portals"
+    ],
+    "how_to_apply": "Check eligibility and empanelled hospitals through official PM-JAY / NHA websites and State health portals. Beneficiary identification and card issuance follow official PM-JAY processes; do not rely on unofficial agents.",
+    "notes": [
+      "Launched on 23 September 2018.",
+      "Fully funded by Government with cost sharing between Centre and States.",
+      "Always confirm current entitlement and hospital empanelment on official portals."
+    ]
+  },
+  {
+    "id": "pmay_u",
+    "name": "Pradhan Mantri Awas Yojana - Urban 2.0 (PMAY-U 2.0)",
+    "category": "housing",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "official_portal": "https://www.pmaymis.gov.in/",
+    "application_url": "https://www.pmaymis.gov.in/",
+    "source": "PMAY-U MIS / MoHUA official guidelines",
+    "summary": "Urban housing mission providing central assistance to eligible families for construction or purchase of a pucca house, including interest subsidy and other verticals under PMAY-U 2.0.",
+    "eligibility": [
+      "Families belonging to EWS / LIG / MIG categories living in urban areas.",
+      "Must not own a pucca house anywhere in the country.",
+      "EWS: annual household income up to Rs. 3 lakh; LIG: above Rs. 3 lakh up to Rs. 6 lakh; MIG: above Rs. 6 lakh up to Rs. 9 lakh (States/UTs may redefine EWS income with MoHUA concurrence).",
+      "Beneficiary who received a house under Central / State / UT / local government housing schemes in the last 20 years is not eligible.",
+      "All eligible beneficiaries (including family members) should have Aadhaar or Aadhaar Virtual ID integrated with beneficiary details."
+    ],
+    "benefits": [
+      "Central assistance to construct or purchase a pucca house with basic amenities.",
+      "Interest Subsidy Scheme (ISS) under PMAY-U 2.0: interest subsidy support with a maximum release of Rs. 1.80 lakh (NPV parameters as per official guidelines) for eligible home loans sanctioned/disbursed on or after 01.09.2024.",
+      "Preference groups include widows, single women, persons with disabilities, senior citizens, transgender persons, SC/ST, minorities and other vulnerable sections as per guidelines."
+    ],
+    "documents": [
+      "Aadhaar / Aadhaar Virtual ID",
+      "Income self-certificate or affidavit as required for EWS/LIG/MIG identification",
+      "Undertaking regarding no prior housing benefit in last 20 years where required",
+      "Bank / loan documents for Interest Subsidy Scheme vertical",
+      "Other documents specified on the PMAY-U unified web portal"
+    ],
+    "how_to_apply": "Register demand and track application on the official PMAY-U unified web portal at pmaymis.gov.in. For ISS, register demand on the portal; applications are forwarded to Primary Lending Institutions as per process.",
+    "notes": [
+      "PMAY-U 2.0 Housing for All Mission effect from 01.09.2024 as per MoHUA.",
+      "Income ceilings and vertical-specific rules can change; verify current Operational Guidelines on official portals."
+    ]
+  },
+  {
+    "id": "pmmy_mudra",
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "category": "business",
+    "ministry": "Department of Financial Services, Ministry of Finance",
+    "official_portal": "https://financialservices.gov.in/pradhan-mantri-mudra-yojana-pmmy",
+    "application_url": "https://www.jansamarth.in/",
+    "source": "Department of Financial Services / official PMMY information",
+    "summary": "Provides collateral-free institutional credit to eligible micro enterprises for income-generating activities in manufacturing, trading, services and permitted agriculture-allied activities.",
+    "eligibility": [
+      "Indian citizen / eligible business entity with a business plan for a non-farm income-generating micro activity (manufacturing, processing, trading, services, or permitted allied agriculture).",
+      "Applicant should meet lender eligibility conditions and should not be a defaulter.",
+      "Final sanction is decided by the Member Lending Institution (bank / NBFC / MFI etc.)."
+    ],
+    "benefits": [
+      "Collateral-free credit support through Member Lending Institutions.",
+      "Shishu: loans up to Rs. 50,000.",
+      "Kishore: above Rs. 50,000 and up to Rs. 5 lakh.",
+      "Tarun: above Rs. 5 lakh and up to Rs. 10 lakh.",
+      "Tarun Plus: above Rs. 10 lakh and up to Rs. 20 lakh for entrepreneurs who successfully repaid previous Tarun loans (effective 24.10.2024 as per official DFS information).",
+      "Can cover term loan and working capital needs as per lender norms."
+    ],
+    "documents": [
+      "Completed loan application / online application details",
+      "Identity and address proof (KYC)",
+      "Bank account details",
+      "Business / project proposal",
+      "Financial statements or income-related documents as required by the lender",
+      "Any registration or eligibility proof required by the lending institution"
+    ],
+    "how_to_apply": "Apply through participating banks, NBFCs or MFIs, or online through the JanSamarth portal (jansamarth.in). Final loan sanction is by the lending institution under its norms and RBI guidelines.",
+    "notes": [
+      "Interest rates are as per lending institution / RBI guidelines and are not fixed as a single government rate in the scheme overview.",
+      "Verify current category limits and process on official DFS / lender / JanSamarth channels."
+    ]
+  },
+  {
+    "id": "pmuy",
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "category": "energy",
+    "ministry": "Ministry of Petroleum and Natural Gas",
+    "official_portal": "https://www.pmuy.gov.in/",
+    "application_url": "https://pmuy.gov.in/Ujjwala2.html",
+    "source": "Official PMUY portal (pmuy.gov.in)",
+    "summary": "Provides deposit-free LPG connections to eligible adult women from poor households to promote clean cooking fuel.",
+    "eligibility": [
+      "Applicant must be a woman who has attained 18 years of age.",
+      "No other LPG connection from any Oil Marketing Company in the same household.",
+      "Adult woman must belong to a poor household based on submission of a deprivation declaration in the prescribed format.",
+      "Earlier category-based eligibility lists (such as SC/ST, AAY, SECC households and other notified groups) are described on official PMUY pages; confirm current criteria on pmuy.gov.in."
+    ],
+    "benefits": [
+      "Security deposit-free LPG connection with no installation charges for covered components.",
+      "Connection package includes cylinder, domestic pressure regulator, Suraksha hose, DGCC booklet as described officially.",
+      "Free first refill(s) and free two-burner stove as per official PMUY benefits description.",
+      "Government cash assistance covers cylinder security deposit, regulator, hose, consumer card and inspection/installation charges as published on the official portal."
+    ],
+    "documents": [
+      "KYC application form with photograph and signature",
+      "Aadhaar of applicant (proof of identity)",
+      "Proof of address if current address differs from Aadhaar",
+      "Ration card or other State Government family composition document (self-declaration formats available for migrants)",
+      "Aadhaar of adult family members appearing in the family composition document",
+      "Bank account details (passbook copy / cancelled cheque)",
+      "Deprivation declaration"
+    ],
+    "how_to_apply": "Apply online on pmuy.gov.in, through a Common Service Centre (CSC), or by submitting the application at an LPG distributor of choice. Self-submission online has no fee as per official FAQ; CSC-assisted submission may attract a stated service charge.",
+    "notes": [
+      "Subsidy transfer for LPG uses bank account details through DBTL as described officially.",
+      "Always use the official PMUY website or authorised OMC distributors; avoid unofficial agents."
+    ]
+  },
+  {
+    "id": "nsp_scholarships",
+    "name": "National Scholarship Portal (NSP)",
+    "category": "education",
+    "ministry": "Government of India (National Scholarship Portal)",
+    "official_portal": "https://scholarships.gov.in/",
+    "application_url": "https://scholarships.gov.in/",
+    "source": "Official National Scholarship Portal (scholarships.gov.in)",
+    "summary": "Official Government of India portal for students to register once (OTR) and apply for multiple central and other scholarship schemes based on each scheme's eligibility criteria.",
+    "eligibility": [
+      "Eligibility depends on the specific scholarship scheme selected on NSP (for example merit-based or welfare-based schemes).",
+      "One Time Registration (OTR) is required to apply on NSP from Academic Year 2024-25 onwards.",
+      "OTR is generated using Aadhaar / Aadhaar Enrolment ID (EID).",
+      "Students should read the scheme-specific guidelines on NSP before applying; do not assume a single common eligibility for all scholarships."
+    ],
+    "benefits": [
+      "Single national portal to discover and apply for multiple scholarship schemes.",
+      "OTR simplifies applications across academic years.",
+      "Scheme-specific financial benefits vary; amounts and conditions are published on each scheme page on NSP."
+    ],
+    "documents": [
+      "Aadhaar / Aadhaar Enrolment ID for OTR",
+      "Academic certificates and marksheets as required by the selected scheme",
+      "Income certificate / caste certificate / disability certificate where required by scheme rules",
+      "Bank account details for Direct Benefit Transfer",
+      "Institute verification documents as required during the NSP workflow"
+    ],
+    "how_to_apply": "Create / use One Time Registration (OTR) on scholarships.gov.in, then apply for eligible scheme(s) for the relevant academic year. NSP services are also available through Common Service Centres (CSCs) as announced on the portal.",
+    "notes": [
+      "Application windows, closing dates and verification deadlines change by academic year and scheme.",
+      "Always verify live dates and scheme guidelines on scholarships.gov.in before applying.",
+      "This record describes the official portal and process; it does not invent benefits for any one scholarship."
+    ]
+  },
+  {
+    "id": "myscheme",
+    "name": "myScheme - National Government Schemes Discovery Platform",
+    "category": "general",
+    "ministry": "Government of India",
+    "official_portal": "https://www.myscheme.gov.in/",
+    "application_url": "https://www.myscheme.gov.in/",
+    "source": "Official myScheme portal (myscheme.gov.in)",
+    "summary": "National one-stop platform to search and discover Central and State/UT government schemes based on citizen eligibility details, with guidance on how to apply.",
+    "eligibility": [
+      "myScheme itself is a discovery platform, not a single benefit scheme.",
+      "Users enter demographic, income, social category and related details to find schemes they may be eligible for.",
+      "Eligibility for each listed scheme is defined by that scheme's own rules on its dedicated page."
+    ],
+    "benefits": [
+      "Helps citizens find relevant Central and State/UT schemes in one place.",
+      "Provides scheme information, FAQs and application process guidance.",
+      "Links users toward the respective official application URLs."
+    ],
+    "documents": [
+      "Documents depend on the specific scheme selected after discovery on myScheme.",
+      "Users should follow the document checklist on the dedicated scheme page / destination portal."
+    ],
+    "how_to_apply": "Visit myscheme.gov.in, enter basic details to see relevant schemes, open the scheme page for details, then navigate to the official application URL shown for that scheme.",
+    "notes": [
+      "Prefer myScheme and ministry portals over unofficial aggregators.",
+      "GovScheme AI should cite myScheme or ministry portals when directing users to apply."
+    ]
+  }
+]
